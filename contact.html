@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blush Bloom Studio | Contact</title>
+  <meta name="description" content="Contact Blush Bloom Studio for custom gift boxes, collaborations, and bulk orders." />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Blush Bloom Studio</div>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Products</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Let’s Create Something Pretty</h1>
+      <p>Send us a message for custom orders, questions, or collabs.</p>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-info">
+        <h2>Visit & Reach Us</h2>
+        <p><strong>Location:</strong> Quezon City, Metro Manila, Philippines</p>
+        <p><strong>Email:</strong> hello@blushbloomstudio.com</p>
+        <p><strong>Instagram:</strong> @blushbloomstudio</p>
+      </div>
+
+      <form id="contact-form" novalidate>
+        <h2>Contact Form</h2>
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" placeholder="Your name" />
+          <small class="error-message" id="name-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+          <small class="error-message" id="email-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us what you need"></textarea>
+          <small class="error-message" id="message-error"></small>
+        </div>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+        <p id="form-success" class="success-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Blush Bloom Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
